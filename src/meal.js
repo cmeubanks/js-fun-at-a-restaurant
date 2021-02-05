@@ -12,13 +12,15 @@ function createMenuItem(menuItemName, price, food) {
 };
 
 // function addIngredients(food, array) {
+//   if(array.length === 0) {
+//     array.push(food)
+//   }
 //   for(var i = 0; i < array.length; i++) {
-//     if(array[i] === food) {
-//       return false
-//     } else {
+//     if(array[i] !== food && array.length < 3) {
 //       array.push(food)
 //     }
 //   }
+//   return array
 // };
 
 function addIngredients(food, array) {
