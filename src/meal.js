@@ -11,26 +11,29 @@ function createMenuItem(menuItemName, price, food) {
   return menuItem
 };
 
-// function addIngredients(food, array) {
-//   if(array.length === 0) {
-//     array.push(food)
-//   }
-//   for(var i = 0; i < array.length; i++) {
-//     if(array[i] !== food && array.length < 3) {
-//       array.push(food)
-//     }
-//   }
-//   return array
-// };
-
 function addIngredients(food, array) {
-   if(array.includes(food)) {
-     return false
-   } else {
-     array.push(food)
-   }
-   return array
+  if(array.length === 0) {
+    array.push(food)
+  }
+  var isTrue = false;
+  for(var i = 0; i < array.length; i++) {
+    if(food === array[i]) {
+      isTrue = true;
+    }
+  }
+  if(isTrue === false) {
+    array.push(food);
+  }
 };
+
+// function addIngredients(food, array) {
+//    if(array.includes(food)) {
+//      return false
+//    } else {
+//      array.push(food)
+//    }
+//    return array
+// };
 
 function formatPrice(objectPrice) {
  return `$${objectPrice}`
