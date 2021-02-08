@@ -27,8 +27,8 @@ function searchOrder(array, item) {
      return true
    }
  }
- return false
-}
+ return false;
+};
 
 
 

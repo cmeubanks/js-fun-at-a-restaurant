@@ -107,7 +107,7 @@ console.log(fruits[4]);
 var groceryStore = {
   name: 'Publix',
   isOpen: true,
-}
+};
 
 // Write the code to add the key of location, with the value of 'Denver, Colorado'. Use dot
 // notation to do this. DO NOT modify your code from above.

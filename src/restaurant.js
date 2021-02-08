@@ -33,7 +33,8 @@ function removeMenuItem(restaurant, mealName, mealType) {
     }
   }
   return `Sorry, we don't sell ${mealName}, try adding a new recipe!`;
-}
+};
+
 
 
 module.exports = {

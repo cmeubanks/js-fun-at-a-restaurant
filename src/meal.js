@@ -26,15 +26,6 @@ function addIngredients(food, array) {
   }
 };
 
-// function addIngredients(food, array) {
-//    if(array.includes(food)) {
-//      return false
-//    } else {
-//      array.push(food)
-//    }
-//    return array
-// };
-
 function formatPrice(objectPrice) {
  return `$${objectPrice}`
 };
@@ -51,7 +42,7 @@ function createRecipe(title, ingredients, menuItemType) {
     type: menuItemType,
   }
   return recipe
-}
+};
 
 module.exports = {
   nameMenuItem,
